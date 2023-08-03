@@ -1,0 +1,443 @@
+body {
+
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    padding: 0.7rem;
+
+
+
+}
+
+.main_con{
+    background-color: rgb(23, 23, 23);
+    flex: 1;
+    overflow: auto;
+    border-radius: 1rem;
+    height: 100vh;
+    width: 100%;
+    
+    
+
+  
+
+
+
+}
+
+/* Side bar css Start */
+
+.sidebar {
+
+    background-color: rgb(0, 0, 0);
+    /* width: 340px; */
+
+    border-radius: 0.8rem;
+    margin-right: 0.5rem;
+    width: 28%;
+
+}
+
+/* navigation */
+.sidebar .nav {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    background-color: rgb(23, 23, 23);
+    border-radius: 0.8rem;
+
+
+}
+
+.sidebar .nav a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.sidebar .nav i {
+    font-size: 1.350rem;
+}
+
+.sidebar .nav .home {
+
+    line-height: 2.5rem;
+}
+
+.sidebar .nav .search {
+    /* opacity: 0.5; */
+
+
+    line-height: 2.5rem;
+}
+
+.sidebar .nav .search a {
+    opacity: 0.7;
+}
+
+.sidebar .nav .search i {
+    opacity: 0.7;
+}
+
+.library {
+    height: 100vh;
+    background-color: rgb(23, 23, 23);
+    border-radius: 1rem;
+}
+
+.lib {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: rgb(23,23,23);
+    line-height: 3rem;
+    /* height: 100vh; */
+    /* width: 100%; */
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    padding-bottom: 0rem;
+    margin-top: 0.5rem;
+    /* align-items: center; */
+
+
+
+}
+
+.lib .you_library a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    opacity: 0.7;
+
+
+}
+
+.icon_lib i {
+
+    /* margin-right: 1rem; */
+    opacity: 0.7;
+    height: 2.5rem;
+    width: 1.6rem;
+
+    /* display: flex; */
+    /* justify-content: flex-end; */
+
+
+}
+
+.icon_lib_arrow {
+    /* padding: 1rem ; */
+
+}
+
+
+.icon_lib i:hover {
+    opacity: 1;
+
+}
+
+/* Side bar Css End */
+
+.music_player {
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 80px;
+
+
+
+}
+
+.main .sidebar .nav .search :hover {
+    opacity: 1;
+
+
+}
+
+.lib .you_library :hover {
+    opacity: 1;
+}
+
+.box {
+    background-color: rgba(128, 128, 128, 0.186);
+    height: 8rem;
+
+    padding: 0.10rem 1rem 1rem 1rem;
+    margin: 0rem 1rem 1.5rem 1rem;
+    border-radius: 1rem;
+
+
+
+}
+
+.box .p_1 {
+
+    font-weight: 700;
+
+}
+
+.box .p_2 {
+
+    opacity: 0.75;
+
+}
+
+ .badge {
+    background-color: white;
+    padding: 0.25rem 1rem;
+    border: none;
+
+    border-radius: 100px;
+
+    font-weight: 700;
+    width: fit-content;
+    height: 2rem;
+}
+
+.box .p_2_0 {
+    font-size: 0.85rem;
+
+}
+
+.box .p_1_1 {
+    font-size: 0.90rem;
+}
+
+/* main content start */
+ .sticky_nav {
+    background-color: rgb(37,37,37);
+    width: 100%;
+    height: 3rem;
+    border-radius: 1rem 0rem 0rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    
+}
+.sign{
+    margin-left: 1.5rem;
+    font-size: 1.2rem;
+   
+}
+.option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-right: 2rem;
+}
+.option .col {
+    margin:0 2rem;
+    background-color: black;
+    color: white;
+}
+@media(max-width:1000px){
+
+
+.hide{
+    display: none;
+
+}
+}
+.cards{
+  
+    padding: 0 1rem 0 1rem;
+    
+}
+.card_contaner{
+    display: flex;
+    flex-wrap: wrap;
+
+    
+}
+.card{
+    height: 240px;
+    width: 150px;
+    background-color: rgba(128, 128, 128, 0.186);
+    padding: 1rem;
+    border-radius: 0.7rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    
+}
+.card .img{
+    width: 100%;
+    height: 50%;
+    border-radius: 0.7rem;
+}
+.card_title{
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+.card_info{
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+.sub_card_contaner{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.fotter{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.line{
+    height: 50px;
+    width: 50%;
+    border-top: 2px solid white;
+    opacity: 0.4;
+    
+}
+.music_player{
+    display: flex;
+    flex-direction: column;
+    
+     
+    justify-content: space-between;
+
+}
+.music_player .music_left{
+
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    width: 25%;
+    
+
+}
+.music_left img{
+    height: 3rem;
+    width: 3rem;
+}
+.music_left_p{
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    font-weight: 600;
+    
+}
+
+.music_left i{
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+.music_left  :hover{
+    opacity: 1;
+}
+.music_mid{
+    width: 50%;
+}
+.music_right {
+    width: 25%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.music{
+    display: flex;
+}
+.music_right i{
+    font-size: 0.8rem;
+    opacity: 0.5;
+    margin: 0.5rem;
+}
+.music_right i:hover {
+    opacity: 1;
+}
+#range{
+    opacity: 1;
+}
+.music_mid{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.player_icon span{
+    margin:0 0.4rem;
+    opacity: 0.5;
+   
+
+}
+.player_icon :hover{
+    opacity: 1;
+   
+}
+.play_bar{
+    
+  
+    width: 95%;
+  
+
+}
+.progress_bar{
+    /* background-color: blue; */
+    width: 86%;
+    appearance:none;
+    cursor: pointer;
+    background-color: transparent;
+
+}
+.progress_bar::-webkit-slider-runnable-track{
+    background-color: rgba(193, 185, 185, 0.277);
+    border-radius: 60px;
+    height: 0.2rem;
+
+}
+.progress_bar::-webkit-slider-runnable-track:hover{
+    background-color: rgb(164, 250, 164);
+     border: 1px solid rgb(2, 130, 2);
+}
+.progress_bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-top: -4.5px;
+    background-color: rgba(187, 179, 179, 0.532);
+    opacity: 0.5;
+}
+.progress_bar::-webkit-slider-thumb:hover{
+    background-color: rgba(255, 255, 255, 0.899);
+    opacity: 1;
+}
+.range_vol::-webkit-slider-runnable-track{
+    background-color: rgba(193, 185, 185, 0.277);
+    border-radius: 60px;
+    height: 0.2rem;
+
+}
+.range_vol::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-top: -5px;
+    background-color: rgba(187, 179, 179, 0.532);
+    opacity: 0.5;}
